@@ -1,0 +1,57 @@
+<app-navegacion></app-navegacion>
+
+
+
+<div class="container" style="margin-top: 20px;">
+  <div class="row">
+    <div class="col-1">
+     
+    </div>
+    <div class="col-10">
+     <div class="card">
+  <h5 class="card-header">Usuarios</h5>
+  <div class="card-body">
+   
+
+    <div class="container">
+      <h2>Lista de usuarios</h2>
+      <table class="table table-primary">
+          <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Número de Teléfono</th>
+          <th>Correo</th>
+          <th>Edad</th>
+          <th>Opciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let persona of personas" class="table table-striped">
+          <td>{{ persona.id }}</td>
+          <td>{{ persona.nombre }}</td>
+          <td>{{ persona.apellido }}</td>
+          <td>{{ persona.numeroTelefono }}</td>
+          <td>{{ persona.correo }}</td>
+          <td>{{ persona.edad }}</td>
+          <td>
+            <button id="botones" class="btn btn-warning" (click)="editPersona(persona.id)"> Editar</button>
+            <button id="botones" class="btn btn-danger" (click)="deletePersona(persona.id)"> Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+      </table>
+      </div>
+      
+
+
+    
+  </div>
+</div>
+    </div>
+    <div class="col-1">
+      
+    </div>
+  </div>
+</div>

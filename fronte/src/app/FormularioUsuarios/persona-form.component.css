@@ -1,0 +1,23 @@
+.container {
+   
+    text-align: center;
+    border-radius: 15px;
+}
+label {
+    display: block;
+}
+input {
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+  
